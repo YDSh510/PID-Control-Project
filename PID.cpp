@@ -74,7 +74,7 @@ void PID::Twiddle(double tol){
 
     //double best_err = total_err;
     double sum = dp[0] + dp[1] + dp[2];
-    if (sum > tol){
+    while (sum > tol){
       printf("hi2");
         for(int i=0;i<3;i++){
           printf("hi3");
